@@ -1,50 +1,209 @@
 package TestCases;
 
+import java.net.HttpURLConnection;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import org.testng.Assert;
 import org.testng.annotations.*;
+
+import com.google.gson.Gson;
 
 import Actions.CreateJsonString;
 import Actions.HttpPost;
 import JsonObjects.CalculatorObject;
+import JsonObjects.CalculatorResponseObject;
+import Tools.Settings;
 
 public class CalculatorTestCases {
 
 	
-	@DataProvider(name="AddtionDataSet")
+	@DataProvider(name="NullValues")
 	public Object[][] createData1() {
 		 return new Object[][] {
-			 //Left num, Right num, Result
-			 { 2, 4, 6 },
-			 { 999, 999, 1998 },
-			 { 1000, 1001, 2001 },
-			 { 1e2, 3, 103 },
-			 { 2, 3e2, 302 },
-			 { 0, 5, 5 },
-			 { -8, 5, -3 },
-			 { 8, -12, -4 },
-			 { 8.1, 5, 13.1 },
-			 { 17, 6.8, 23.8 },
+			 //Left num, 	Right num,	Operator
+			 { 2, 			4, 			null },
+			 { null, 			4, 			"-" },
+			 { 6, 			null, 			"+" },
+			
+		 };
+	
+}
+	
+	@Test (dataProvider="NullValues")
+	public void CalculatorNullValues(Integer leftNumber, Integer rightNumber, String operator) throws Exception {
+		
+		//Create Calculator object
+		CalculatorObject calc = new CalculatorObject();
+		calc.LeftNumber = leftNumber;
+		calc.RightNumber = rightNumber;
+		calc.Operator = operator;
+		
+		//Create Json string
+		String calcJson = CreateJsonString.CreateCalculatorJson(calc);
+		
+		//Make Post call with Json string
+		HttpsURLConnection con = HttpPost.sendPost(calcJson);
+		//Get Response code
+		Integer intResCode = HttpPost.GetResponseCode(con);
+		//Verify Response code not 200
+		Assert.assertFalse(intResCode.equals(200), "Response code was 200, should have been a failure code");
+		
+		
+	}
+	
+	@DataProvider(name="AddtionDataSet")
+	public Object[][] createData2() {
+		 return new Object[][] {
+			 //Left num, 	Right num, 	Result
+			 { 0, 			4, 			4 },
+			 { 12, 			0, 			12 },
+			 { 999, 		999, 		1998 },
+			 { 1000, 		1001, 		2001 },
+			 { -10, 		-5, 		-15 },
+			 { -8, 			5, 			-3 },
+			 { 8, 			-12, 		-4 },
+	
 		 };
 	
 }
 	
 	@Test(dataProvider="AddtionDataSet")
-	public void AddtionTestCases(Integer dblLeftNumber, Integer dblRightNumber, Integer dblResult) throws Exception {
+	public void AddtionTestCases(Integer leftNumber, Integer rightNumber, Integer result) throws Exception {
 		
 		//Create Calculator object
 		CalculatorObject calc = new CalculatorObject();
-		calc.LeftNumber = dblLeftNumber;
-		calc.RightNumber = dblRightNumber;
+		calc.LeftNumber = leftNumber;
+		calc.RightNumber = rightNumber;
 		calc.Operator = "+";
 		
 		//Create Json string
 		String calcJson = CreateJsonString.CreateCalculatorJson(calc);
 		
 		//Make Post call with Json string
-		String response = HttpPost.sendPost(calcJson);
+		HttpsURLConnection con = HttpPost.sendPost(calcJson);
+		//Verify response code = 200
+		HttpPost.VerifyResponseCode200(con);
+		//Get response
+		String jsonResponse = HttpPost.GetResponse(con);
+		
+		//Extract response from Json
+		Gson gson = new Gson();
+		CalculatorResponseObject response = gson.fromJson(jsonResponse, CalculatorResponseObject.class);
 		
 		//Evaluate the response
+		Assert.assertEquals(result, response.value, "Value from calculator is incorrect");
+		
+		
+	}
+	
+	
+	@DataProvider(name="SubtractionDataSet")
+	public Object[][] createData3() {
+		 return new Object[][] {
+			 //Left num, 	Right num, 	Result
+			 { 2, 			0,	 		0 },
+			 { 0, 			6,	 		-6 },
+			 { 999, 		999, 		0 },
+			 { 1000, 		999, 		1 },
+			 { -7, 			-23,	 	16 },
+			 { -8, 			5,	 		-13 },
+			 { 8, 			-12, 		20 },
+		 };
+	
+	}
+	
+	@Test(dataProvider="SubtractionDataSet")
+	public void SubtractionTestCases(Integer leftNumber, Integer rightNumber, Integer result) throws Exception {
+		
+		//Create Calculator object
+		CalculatorObject calc = new CalculatorObject();
+		calc.LeftNumber = leftNumber;
+		calc.RightNumber = rightNumber;
+		calc.Operator = "-";
+		
+		//Create Json string
+		String calcJson = CreateJsonString.CreateCalculatorJson(calc);
+		
+		//Make Post call with Json string
+		HttpsURLConnection con = HttpPost.sendPost(calcJson);
+		//Verify response code = 200
+		HttpPost.VerifyResponseCode200(con);
+		//Get response
+		String jsonResponse = HttpPost.GetResponse(con);
+				
+		//Extract response from Json
+		Gson gson = new Gson();
+		CalculatorResponseObject response = gson.fromJson(jsonResponse, CalculatorResponseObject.class);
+				
+		//Evaluate the response
+		Assert.assertEquals(result, response.value, "Value from calculator is incorrect");
 		
 		
 		
 	}
+	
+	@DataProvider(name="MultiplicationDataSet")
+	public Object[][] createData4() {
+		 return new Object[][] {
+			 //Left num, 	Right num, 	Result
+			 { 2, 			0,	 		0 },
+			 { 1, 			6,	 		6 },
+			 { 8, 			0,	 		0 },
+			 { 999, 		999, 		998001 },
+			 { 1000, 		9, 			9000 },
+			 { -7, 			-23,	 	161 },
+			 { -8, 			5,	 		-40 },
+			 { 8, 			-12, 		-96 },
+		 };
+	
+	}
+	
+	@Test(dataProvider="MultiplicationDataSet")
+	public void MultiplecationTestCases(Integer leftNumber, Integer rightNumber, Integer result) throws Exception {
+		
+		//Create Calculator object
+		CalculatorObject calc = new CalculatorObject();
+		calc.LeftNumber = leftNumber;
+		calc.RightNumber = rightNumber;
+		calc.Operator = "*";
+		
+		//Create Json string
+		String calcJson = CreateJsonString.CreateCalculatorJson(calc);
+		
+		//Make Post call with Json string
+		HttpsURLConnection con = HttpPost.sendPost(calcJson);
+		//Verify response code = 200
+		HttpPost.VerifyResponseCode200(con);
+		//Get response
+		String jsonResponse = HttpPost.GetResponse(con);
+				
+		//Extract response from Json
+		Gson gson = new Gson();
+		CalculatorResponseObject response = gson.fromJson(jsonResponse, CalculatorResponseObject.class);
+				
+		//Evaluate the response
+		Assert.assertEquals(result, response.value, "Value from calculator is incorrect");
+		
+		
+		
+	}
+	
+	@DataProvider(name="DivisionDataSet")
+	public Object[][] createData5() {
+		 return new Object[][] {
+			 //Left num, 	Right num, 	Result
+			 { 1, 			1,	 		1 },
+			 { 10, 			2,	 		5 },
+			 { 8, 			0,	 		0 },
+			 { 999, 		999, 		998001 },
+			 { 1000, 		9, 			9000 },
+			 { -7, 			-23,	 	161 },
+			 { -8, 			5,	 		-40 },
+			 { 8, 			-12, 		-96 },
+		 };
+	
+	}
+	
+	
 }
