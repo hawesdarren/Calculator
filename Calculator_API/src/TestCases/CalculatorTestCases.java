@@ -52,7 +52,32 @@ public class CalculatorTestCases {
 		
 	}
 	
-	@Test
+	@Test 
+	public void CalculatorMalformedJson() throws Exception {
+		
+		//Create Calculator object
+		CalculatorObject calc = new CalculatorObject();
+		calc.LeftNumber = 10;
+		calc.RightNumber = 30;
+		calc.Operator = "-";
+				
+		//Create Json string
+		String calcJson = CreateJsonString.CreateCalculatorJson(calc);
+		//Remove 1st comma
+		calcJson = calcJson.replaceFirst(",", "");
+		
+		//Make Post call with Json string
+		HttpsURLConnection con = HttpPost.sendPost(calcJson);
+		//Get Response code
+		Integer intResCode = HttpPost.GetResponseCode(con);
+		//Verify Response code not 200
+		Assert.assertFalse(intResCode.equals(200), "Response code was 200, should have been a failure code");
+		//Verify Response code not 500
+		Assert.assertTrue(intResCode.equals(500), "Response code was not 500 - Response code was: " + intResCode );
+		
+	}
+	
+	@Test (priority=1000)
 	public void CalculatorInvalidAuth() throws Exception {
 		
 		//Create Calculator object
@@ -61,6 +86,8 @@ public class CalculatorTestCases {
 		calc.RightNumber = 40;
 		calc.Operator = "+";
 		
+		//Store valid auth key
+		String validAuthKey = Settings.authKey;
 		//Make Auth Key inavlid
 		String inavlidAuthKey  = Settings.authKey;
 		inavlidAuthKey = inavlidAuthKey.substring(0, 20);
