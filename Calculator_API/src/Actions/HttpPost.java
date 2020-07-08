@@ -120,9 +120,8 @@ public class HttpPost {
 		catch(Exception e) {
 			Assert.assertTrue(false, "Could not connect to the server");
 		}
-		Assert.assertTrue(resCode < 400, "Response code was not < 400");
-		//Assert.assertEquals(resCode, 200, "REsponse code was not valid");
-		
+		Assert.assertTrue(resCode < 400, "Response code was not < 400 - Actual response code: " + resCode);
+				
 	}
 	
 	public static String GetResponse(HttpsURLConnection con) {

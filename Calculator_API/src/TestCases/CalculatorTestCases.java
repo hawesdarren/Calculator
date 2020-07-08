@@ -74,6 +74,8 @@ public class CalculatorTestCases {
 		Integer intResCode = HttpPost.GetResponseCode(con);
 		//Verify Response code not 200
 		Assert.assertFalse(intResCode.equals(200), "Response code was 200, should have been a failure code");
+		//Verify Reponse code = 404
+		Assert.assertTrue(intResCode.equals(404), "Response code wa snot 404 - Reponse code was actually: " + intResCode);
 		
 		
 	}
@@ -272,5 +274,7 @@ public class CalculatorTestCases {
 		
 		
 	}
+	
+	
 	
 }
