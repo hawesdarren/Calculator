@@ -109,7 +109,7 @@ public class HttpPost {
 		
 	}
 	
-	public static void VerifyResponseCode200(HttpsURLConnection con)  {
+	public static void VerifyResponseCodeLessThan400(HttpsURLConnection con)  {
 		//Set default value to -1 = Error
 		int resCode = -1;
 		
@@ -120,8 +120,8 @@ public class HttpPost {
 		catch(Exception e) {
 			Assert.assertTrue(false, "Could not connect to the server");
 		}
-		
-		Assert.assertEquals(resCode, 200, "REsponse code was not valid");
+		Assert.assertTrue(resCode < 400, "Response code was not < 400");
+		//Assert.assertEquals(resCode, 200, "REsponse code was not valid");
 		
 	}
 	
