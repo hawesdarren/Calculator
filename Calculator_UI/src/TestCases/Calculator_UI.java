@@ -128,7 +128,7 @@ public class Calculator_UI {
 }
 	
 	@Test(dataProvider = "DivisonDataSet")
-	public void Calculator_MultiplecationDivision(String strLeftNumber, String strRightNumber, String Result) {
+	public void Calculator_Division(String strLeftNumber, String strRightNumber, String Result) {
 		
 		CalculatorActions.EnterData(driver, strLeftNumber, strRightNumber, "*");
 		CalculatorActions.SelectCalculate(driver);
