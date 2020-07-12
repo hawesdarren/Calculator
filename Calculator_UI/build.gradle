@@ -37,6 +37,7 @@ test{
 		useDefaultListeners = true
 			
 		}
+		if (System.env.CHROMEDRIVER)   systemProperty "webdriver.chrome.driver", System.env.CHROMEDRIVER
 		systemProperty 'org.uncommons.reportng.title', 'Calculator UI'
 		systemProperty 'org.uncommons.reportng.escape-output', 'false' // enable embedding screenshots
 		//systemProperty 'org.uncommons.reportng.stylesheet', "${projectDir}/IBAutomation/custom.css"
