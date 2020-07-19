@@ -12,7 +12,7 @@ public class Calculator_UI {
 	private WebDriver driver;
 	
 	
-	@BeforeClass
+	@BeforeClass (alwaysRun=true)
 	public void BeforeClass() {
 		
 		//Start Browser
@@ -23,7 +23,7 @@ public class Calculator_UI {
 		
 	}
 	
-	@AfterClass
+	@AfterClass (alwaysRun=true)
 	public void AfterClass() {
 		driver.quit();
 	}
@@ -48,7 +48,7 @@ public class Calculator_UI {
 		
 	}
 	
-	@Test(dataProvider = "AddtionDataSet")
+	@Test(dataProvider = "AddtionDataSet", priority=10, groups = { "Addition" })
 	public void Calculator_Addition(String strLeftNumber, String strRightNumber, String Result) {
 		
 		CalculatorActions.EnterData(driver, strLeftNumber, strRightNumber, "+");
@@ -74,7 +74,7 @@ public class Calculator_UI {
 	
 }
 	
-	@Test(dataProvider = "SubtractionDataSet")
+	@Test(dataProvider = "SubtractionDataSet", priority=20, groups = { "Subtraction" })
 	public void Calculator_Subraction(String strLeftNumber, String strRightNumber, String Result) {
 		
 		CalculatorActions.EnterData(driver, strLeftNumber, strRightNumber, "-");
@@ -101,7 +101,7 @@ public class Calculator_UI {
 	
 }
 	
-	@Test(dataProvider = "MultiplicationDataSet")
+	@Test(dataProvider = "MultiplicationDataSet", priority=20, groups = { "Multiplication" })
 	public void Calculator_Multiplication(String strLeftNumber, String strRightNumber, String Result) {
 		
 		CalculatorActions.EnterData(driver, strLeftNumber, strRightNumber, "*");
@@ -127,7 +127,7 @@ public class Calculator_UI {
 	
 }
 	
-	@Test(dataProvider = "DivisonDataSet")
+	@Test(dataProvider = "DivisonDataSet", priority=20, groups = { "Division" })
 	public void Calculator_Division(String strLeftNumber, String strRightNumber, String Result) {
 		
 		CalculatorActions.EnterData(driver, strLeftNumber, strRightNumber, "/");
@@ -135,7 +135,7 @@ public class Calculator_UI {
 		CalculatorActions.VerifyResults(driver, strLeftNumber, strRightNumber, Result);
 	}
 	
-	@Test
+	@Test (priority=30)
 	public void Calculator_VerifyUI()
 	{
 		CalculatorActions.VerifyPageUI(driver);

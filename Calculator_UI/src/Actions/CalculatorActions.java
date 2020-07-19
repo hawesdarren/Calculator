@@ -64,7 +64,7 @@ public class CalculatorActions extends CalculatorElements{
 	public static void VerifyResults(WebDriver driver, String strLeftNumber, String strRightNumber, String Result) {
 				
 		//Wait until vlaue is the correct answer - this is to allow for the AJAX call
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 2);
 		wait.until(ExpectedConditions.attributeToBe(result, "value", Result));
 		
 		//Assert result is as Expected
