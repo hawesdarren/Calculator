@@ -34,6 +34,11 @@ test{
 	
 	useTestNG() {
 		
+		def suitesToRun = project.findProperty('TestSuite')
+			if (suitesToRun) {
+				println "Running $suitesToRun"
+				suites suitesToRun.split(',')
+			}
 		useDefaultListeners = true
 			
 		}
