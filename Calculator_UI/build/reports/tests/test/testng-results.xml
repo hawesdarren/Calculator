@@ -2,16 +2,28 @@
 <testng-results skipped="0" failed="30" ignored="0" total="42" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Gradle suite" duration-ms="338699" started-at="2020-07-11T16:10:16 NZST" finished-at="2020-07-11T16:15:55 NZST">
+  <suite name="Gradle suite" duration-ms="91045" started-at="2020-07-19T15:56:50 NZST" finished-at="2020-07-19T15:58:21 NZST">
     <groups>
+      <group name="Multiplication">
+        <method signature="Calculator_UI.Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" class="TestCases.Calculator_UI"/>
+      </group> <!-- Multiplication -->
+      <group name="Addition">
+        <method signature="Calculator_UI.Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" class="TestCases.Calculator_UI"/>
+      </group> <!-- Addition -->
+      <group name="Subtraction">
+        <method signature="Calculator_UI.Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" class="TestCases.Calculator_UI"/>
+      </group> <!-- Subtraction -->
+      <group name="Division">
+        <method signature="Calculator_UI.Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" class="TestCases.Calculator_UI"/>
+      </group> <!-- Division -->
     </groups>
-    <test name="Gradle test" duration-ms="338699" started-at="2020-07-11T16:10:16 NZST" finished-at="2020-07-11T16:15:55 NZST">
+    <test name="Gradle test" duration-ms="91045" started-at="2020-07-19T15:56:50 NZST" finished-at="2020-07-19T15:58:21 NZST">
       <class name="TestCases.Calculator_UI">
-        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="BeforeClass" is-config="true" duration-ms="6455" started-at="2020-07-11T16:10:16 NZST" finished-at="2020-07-11T16:10:22 NZST">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="BeforeClass" is-config="true" duration-ms="5621" started-at="2020-07-19T15:56:50 NZST" finished-at="2020-07-19T15:56:55 NZST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10686" started-at="2020-07-11T16:10:22 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:10:33 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2832" started-at="2020-07-19T15:56:55 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:56:58 NZST">
           <params>
             <param index="0">
               <value>
@@ -31,20 +43,20 @@
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "6". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "6". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "6". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "6". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -108,7 +120,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10708" started-at="2020-07-11T16:10:33 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:10:44 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2529" started-at="2020-07-19T15:56:58 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:01 NZST">
           <params>
             <param index="0">
               <value>
@@ -128,20 +140,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1998". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1998". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1998". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1998". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -205,7 +217,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10756" started-at="2020-07-11T16:10:44 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:10:55 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2457" started-at="2020-07-19T15:57:01 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:03 NZST">
           <params>
             <param index="0">
               <value>
@@ -225,20 +237,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "2001". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "2001". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "2001". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "2001". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -302,7 +314,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10661" started-at="2020-07-11T16:10:55 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:11:05 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2682" started-at="2020-07-19T15:57:03 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:06 NZST">
           <params>
             <param index="0">
               <value>
@@ -322,20 +334,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "103". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "103". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "103". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "103". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -399,7 +411,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10751" started-at="2020-07-11T16:11:05 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:11:16 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2554" started-at="2020-07-19T15:57:06 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:08 NZST">
           <params>
             <param index="0">
               <value>
@@ -419,20 +431,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "302". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "302". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "302". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "302". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -496,7 +508,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10493" started-at="2020-07-11T16:11:16 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:11:26 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2579" started-at="2020-07-19T15:57:08 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:11 NZST">
           <params>
             <param index="0">
               <value>
@@ -516,20 +528,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "4.3". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "4.3". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "4.3". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "4.3". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -593,7 +605,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10651" started-at="2020-07-11T16:11:26 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:11:37 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2609" started-at="2020-07-19T15:57:11 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:14 NZST">
           <params>
             <param index="0">
               <value>
@@ -613,20 +625,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "14.5". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "14.5". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "14.5". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "14.5". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -690,7 +702,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10873" started-at="2020-07-11T16:11:37 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:11:48 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2673" started-at="2020-07-19T15:57:14 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:16 NZST">
           <params>
             <param index="0">
               <value>
@@ -710,20 +722,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "5". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "5". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "5". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "5". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -787,7 +799,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10510" started-at="2020-07-11T16:11:48 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:11:58 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2604" started-at="2020-07-19T15:57:16 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:19 NZST">
           <params>
             <param index="0">
               <value>
@@ -807,20 +819,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-3". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-3". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-3". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-3". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -884,7 +896,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10626" started-at="2020-07-11T16:11:58 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:12:09 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2562" started-at="2020-07-19T15:57:19 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:21 NZST">
           <params>
             <param index="0">
               <value>
@@ -904,20 +916,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-4". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-4". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-4". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-4". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -981,7 +993,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="10578" started-at="2020-07-11T16:12:09 NZST" data-provider="AddtionDataSet" finished-at="2020-07-11T16:12:20 NZST">
+        <test-method status="FAIL" signature="Calculator_Addition(java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Addition" duration-ms="2611" started-at="2020-07-19T15:57:21 NZST" data-provider="AddtionDataSet" finished-at="2020-07-19T15:57:24 NZST">
           <params>
             <param index="0">
               <value>
@@ -1001,20 +1013,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "2147483648". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "2147483648". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "2147483648". Current value: "" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "2147483648". Current value: "" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1078,7 +1090,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Addition -->
-        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="10927" started-at="2020-07-11T16:12:20 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:12:31 NZST">
+        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="2536" started-at="2020-07-19T15:57:24 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:27 NZST">
           <params>
             <param index="0">
               <value>
@@ -1098,20 +1110,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "0.5". Current value: "0" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "0.5". Current value: "0" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "0.5". Current value: "0" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "0.5". Current value: "0" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1175,7 +1187,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="PASS" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="1061" started-at="2020-07-11T16:12:31 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:12:32 NZST">
+        <test-method status="PASS" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="895" started-at="2020-07-19T15:57:27 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:28 NZST">
           <params>
             <param index="0">
               <value>
@@ -1196,7 +1208,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="PASS" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="364" started-at="2020-07-11T16:12:32 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:12:32 NZST">
+        <test-method status="PASS" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="305" started-at="2020-07-19T15:57:28 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:28 NZST">
           <params>
             <param index="0">
               <value>
@@ -1217,7 +1229,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="10847" started-at="2020-07-11T16:12:32 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:12:43 NZST">
+        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="2451" started-at="2020-07-19T15:57:28 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:30 NZST">
           <params>
             <param index="0">
               <value>
@@ -1237,20 +1249,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "33.33". Current value: "33" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "33.33". Current value: "33" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "33.33". Current value: "33" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "33.33". Current value: "33" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1314,7 +1326,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="10935" started-at="2020-07-11T16:12:43 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:12:54 NZST">
+        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="2579" started-at="2020-07-19T15:57:30 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:33 NZST">
           <params>
             <param index="0">
               <value>
@@ -1334,20 +1346,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "600". Current value: "0" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "600". Current value: "0" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "600". Current value: "0" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "600". Current value: "0" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1411,7 +1423,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="10810" started-at="2020-07-11T16:12:54 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:13:05 NZST">
+        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="2454" started-at="2020-07-19T15:57:33 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:35 NZST">
           <params>
             <param index="0">
               <value>
@@ -1431,20 +1443,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "10.25". Current value: "10" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "10.25". Current value: "10" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "10.25". Current value: "10" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "10.25". Current value: "10" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1508,7 +1520,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="10351" started-at="2020-07-11T16:13:05 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:13:15 NZST">
+        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="2470" started-at="2020-07-19T15:57:35 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:38 NZST">
           <params>
             <param index="0">
               <value>
@@ -1528,20 +1540,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "50". Current value: "10" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "50". Current value: "10" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "50". Current value: "10" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "50". Current value: "10" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1605,7 +1617,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="10779" started-at="2020-07-11T16:13:15 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:13:26 NZST">
+        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="2437" started-at="2020-07-19T15:57:38 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:40 NZST">
           <params>
             <param index="0">
               <value>
@@ -1625,20 +1637,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-6". Current value: "6" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-6". Current value: "6" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-6". Current value: "6" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-6". Current value: "6" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1702,7 +1714,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="10882" started-at="2020-07-11T16:13:26 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:13:37 NZST">
+        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="2568" started-at="2020-07-19T15:57:40 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:43 NZST">
           <params>
             <param index="0">
               <value>
@@ -1722,20 +1734,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-8". Current value: "8" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-8". Current value: "8" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-8". Current value: "8" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-8". Current value: "8" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1799,7 +1811,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="10788" started-at="2020-07-11T16:13:37 NZST" data-provider="DivisonDataSet" finished-at="2020-07-11T16:13:47 NZST">
+        <test-method status="FAIL" signature="Calculator_Division(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Division" duration-ms="2499" started-at="2020-07-19T15:57:43 NZST" data-provider="DivisonDataSet" finished-at="2020-07-19T15:57:45 NZST">
           <params>
             <param index="0">
               <value>
@@ -1819,20 +1831,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "error". Current value: "8" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "error". Current value: "8" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "error". Current value: "8" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "error". Current value: "8" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -1896,7 +1908,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Division -->
-        <test-method status="PASS" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="451" started-at="2020-07-11T16:13:47 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:13:48 NZST">
+        <test-method status="PASS" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="344" started-at="2020-07-19T15:57:45 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:57:46 NZST">
           <params>
             <param index="0">
               <value>
@@ -1917,7 +1929,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="10316" started-at="2020-07-11T16:13:48 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:13:58 NZST">
+        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="2456" started-at="2020-07-19T15:57:46 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:57:48 NZST">
           <params>
             <param index="0">
               <value>
@@ -1937,20 +1949,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "998001". Current value: "99800" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "998001". Current value: "99800" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "998001". Current value: "99800" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "998001". Current value: "99800" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2014,7 +2026,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="PASS" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="957" started-at="2020-07-11T16:13:58 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:13:59 NZST">
+        <test-method status="PASS" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="843" started-at="2020-07-19T15:57:48 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:57:49 NZST">
           <params>
             <param index="0">
               <value>
@@ -2035,7 +2047,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="PASS" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="939" started-at="2020-07-11T16:13:59 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:14:00 NZST">
+        <test-method status="PASS" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="910" started-at="2020-07-19T15:57:49 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:57:50 NZST">
           <params>
             <param index="0">
               <value>
@@ -2056,7 +2068,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="PASS" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="964" started-at="2020-07-11T16:14:00 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:14:01 NZST">
+        <test-method status="PASS" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="900" started-at="2020-07-19T15:57:50 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:57:51 NZST">
           <params>
             <param index="0">
               <value>
@@ -2077,7 +2089,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="10875" started-at="2020-07-11T16:14:01 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:14:12 NZST">
+        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="2516" started-at="2020-07-19T15:57:51 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:57:53 NZST">
           <params>
             <param index="0">
               <value>
@@ -2097,20 +2109,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "3.9". Current value: "600" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "3.9". Current value: "600" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "3.9". Current value: "600" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "3.9". Current value: "600" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2174,7 +2186,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="10868" started-at="2020-07-11T16:14:12 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:14:23 NZST">
+        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="2424" started-at="2020-07-19T15:57:53 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:57:56 NZST">
           <params>
             <param index="0">
               <value>
@@ -2194,20 +2206,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "52". Current value: "600" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "52". Current value: "600" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "52". Current value: "600" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "52". Current value: "600" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2271,7 +2283,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="10742" started-at="2020-07-11T16:14:23 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:14:34 NZST">
+        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="2440" started-at="2020-07-19T15:57:56 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:57:58 NZST">
           <params>
             <param index="0">
               <value>
@@ -2291,20 +2303,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-15". Current value: "15" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-15". Current value: "15" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-15". Current value: "15" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-15". Current value: "15" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2368,7 +2380,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="10890" started-at="2020-07-11T16:14:34 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:14:44 NZST">
+        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="2419" started-at="2020-07-19T15:57:58 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:58:01 NZST">
           <params>
             <param index="0">
               <value>
@@ -2388,20 +2400,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-40". Current value: "40" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-40". Current value: "40" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-40". Current value: "40" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-40". Current value: "40" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2465,7 +2477,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="10764" started-at="2020-07-11T16:14:44 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-11T16:14:55 NZST">
+        <test-method status="FAIL" signature="Calculator_Multiplication(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Multiplication" duration-ms="2470" started-at="2020-07-19T15:58:01 NZST" data-provider="MultiplicationDataSet" finished-at="2020-07-19T15:58:03 NZST">
           <params>
             <param index="0">
               <value>
@@ -2485,20 +2497,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "error". Current value: "40" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "error". Current value: "40" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "error". Current value: "40" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "error". Current value: "40" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2562,7 +2574,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Multiplication -->
-        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="1020" started-at="2020-07-11T16:14:55 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:14:56 NZST">
+        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="831" started-at="2020-07-19T15:58:03 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:04 NZST">
           <params>
             <param index="0">
               <value>
@@ -2583,7 +2595,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="929" started-at="2020-07-11T16:14:56 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:14:57 NZST">
+        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="907" started-at="2020-07-19T15:58:04 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:05 NZST">
           <params>
             <param index="0">
               <value>
@@ -2604,7 +2616,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="10343" started-at="2020-07-11T16:14:57 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:15:08 NZST">
+        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="2496" started-at="2020-07-19T15:58:05 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:07 NZST">
           <params>
             <param index="0">
               <value>
@@ -2624,20 +2636,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1". Current value: "-899" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1". Current value: "-899" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1". Current value: "-899" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1". Current value: "-899" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2701,7 +2713,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="941" started-at="2020-07-11T16:15:08 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:15:08 NZST">
+        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="843" started-at="2020-07-19T15:58:07 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:08 NZST">
           <params>
             <param index="0">
               <value>
@@ -2722,7 +2734,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="921" started-at="2020-07-11T16:15:08 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:15:09 NZST">
+        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="820" started-at="2020-07-19T15:58:08 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:09 NZST">
           <params>
             <param index="0">
               <value>
@@ -2743,7 +2755,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="10846" started-at="2020-07-11T16:15:09 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:15:20 NZST">
+        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="2371" started-at="2020-07-19T15:58:09 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:11 NZST">
           <params>
             <param index="0">
               <value>
@@ -2763,20 +2775,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-1.7". Current value: "-298" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-1.7". Current value: "-298" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-1.7". Current value: "-298" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-1.7". Current value: "-298" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2840,7 +2852,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="10874" started-at="2020-07-11T16:15:20 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:15:31 NZST">
+        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="2485" started-at="2020-07-19T15:58:11 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:14 NZST">
           <params>
             <param index="0">
               <value>
@@ -2860,20 +2872,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1.5". Current value: "-298" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1.5". Current value: "-298" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1.5". Current value: "-298" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "1.5". Current value: "-298" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -2937,7 +2949,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="896" started-at="2020-07-11T16:15:31 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:15:32 NZST">
+        <test-method status="PASS" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="835" started-at="2020-07-19T15:58:14 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:15 NZST">
           <params>
             <param index="0">
               <value>
@@ -2958,7 +2970,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="10783" started-at="2020-07-11T16:15:32 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:15:43 NZST">
+        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="2479" started-at="2020-07-19T15:58:15 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:17 NZST">
           <params>
             <param index="0">
               <value>
@@ -2978,20 +2990,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-13". Current value: "3" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-13". Current value: "3" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-13". Current value: "3" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "-13". Current value: "3" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -3055,7 +3067,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="10455" started-at="2020-07-11T16:15:43 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-11T16:15:53 NZST">
+        <test-method status="FAIL" signature="Calculator_Subraction(java.lang.String, java.lang.String, java.lang.String)[pri:20, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_Subraction" duration-ms="2514" started-at="2020-07-19T15:58:17 NZST" data-provider="SubtractionDataSet" finished-at="2020-07-19T15:58:20 NZST">
           <params>
             <param index="0">
               <value>
@@ -3075,20 +3087,20 @@ at java.lang.Thread.run(Thread.java:748)
           </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "20". Current value: "-4" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "20". Current value: "-4" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353]]>
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "20". Current value: "-4" (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //input[@class='result'] to have value "20". Current value: "-4" (tried for 2 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'KB3MB0HM2L', ip: '10.9.189.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'KB3MB0HM2L', ip: '10.4.177.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: adff186d15796bc45d3454910dd44353
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\dhawes01\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61487}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 41c3755be977ba57e875b863fcd64aa1
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at Actions.CalculatorActions.VerifyResults(CalculatorActions.java:68)
@@ -3152,11 +3164,11 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_Subraction -->
-        <test-method status="PASS" signature="Calculator_VerifyUI()[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_VerifyUI" duration-ms="679" started-at="2020-07-11T16:15:53 NZST" finished-at="2020-07-11T16:15:54 NZST">
+        <test-method status="PASS" signature="Calculator_VerifyUI()[pri:30, instance:TestCases.Calculator_UI@1f5185dc]" name="Calculator_VerifyUI" duration-ms="448" started-at="2020-07-19T15:58:20 NZST" finished-at="2020-07-19T15:58:20 NZST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Calculator_VerifyUI -->
-        <test-method status="PASS" signature="AfterClass()[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="AfterClass" is-config="true" duration-ms="686" started-at="2020-07-11T16:15:54 NZST" finished-at="2020-07-11T16:15:55 NZST">
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:TestCases.Calculator_UI@1f5185dc]" name="AfterClass" is-config="true" duration-ms="698" started-at="2020-07-19T15:58:20 NZST" finished-at="2020-07-19T15:58:21 NZST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterClass -->

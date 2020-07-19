@@ -34,7 +34,7 @@ test{
 	
 	useTestNG() {
 		
-		def suitesToRun = project.findProperty('TestSuite')
+		def suitesToRun = project.findProperty('suites')
 			if (suitesToRun) {
 				println "Running $suitesToRun"
 				suites suitesToRun.split(',')
